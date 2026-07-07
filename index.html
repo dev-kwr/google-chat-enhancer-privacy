@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Google Chat Enhancerプライバシーポリシー/Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      line-height: 1.8;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+      color: #1a1a1a;
+      background: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e6e6e6; background: #1a1a1a; }
+      a { color: #6ea8fe; }
+      code { background: #2a2a2a; }
+      hr { border-color: #333; }
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 4px; }
+    h2 { font-size: 1.2rem; margin-top: 2.2em; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+    .updated { color: #888; font-size: 0.9rem; margin-top: 0; }
+    .nav { font-size: 0.9rem; margin: 16px 0 32px; }
+    code { background: #f2f2f2; padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+    ul { padding-left: 1.3em; }
+    li { margin: 6px 0; }
+    hr { margin: 64px 0; border: none; border-top: 1px solid #ddd; }
+    .lead { font-size: 1.02rem; }
+  </style>
+</head>
+<body>
+
+<!-- ====================== 日本語 ====================== -->
+<section lang="ja" id="ja">
+  <h1>Google Chat Enhancerプライバシーポリシー</h1>
+  <p class="updated">最終更新日: 2026年7月8日</p>
+  <p class="nav"><a href="#en">English version below ↓</a></p>
+
+  <p class="lead">
+    Google Chat Enhancer（以下「本拡張機能」）は、Google ChatにEnterで改行、下書き一覧、送信履歴などの補助機能を追加するChrome拡張機能です。本ポリシーは、本拡張機能が取り扱うデータとその取り扱い方法を説明します。
+  </p>
+
+  <h2>基本方針</h2>
+  <ul>
+    <li>本拡張機能は、開発者独自のサーバーを一切持ちません。開発者がユーザーのデータを受信・保存・閲覧することはありません。</li>
+    <li>本拡張機能は、Google Chat（<code>https://chat.google.com/*</code>）上でのみ動作します。</li>
+    <li>解析（アナリティクス）、トラッキング、広告を目的としたデータ収集は一切行いません。</li>
+    <li>本拡張機能は、ユーザーデータを販売・転送したり、信用力の判断や融資目的に使用したりしません。</li>
+  </ul>
+
+  <h2>取り扱うデータ</h2>
+  <p>本拡張機能は、機能を提供するために以下のデータを処理・保存することがあります。</p>
+  <ul>
+    <li><strong>設定情報</strong>: Enterで改行、下書き一覧、送信履歴など各機能のオン／オフ設定。</li>
+    <li><strong>下書きデータ</strong>: Google Chatの入力欄に書いた下書き本文、会話またはスペース名、Google Chat内の移動先パス、保存日時、スレッドID、会話アイコンURL（取得できる場合）。下書き本文は最大7,000文字まで保存されます。</li>
+    <li><strong>送信履歴データ</strong>: 本拡張機能が検知した最近の送信メッセージ本文、会話またはスペース名、Google Chat内の移動先パス、送信日時、スレッドID、会話アイコンURL（取得できる場合）。送信履歴は最大100件、本文は各件最大500文字まで保存されます。</li>
+  </ul>
+  <p>
+    本拡張機能は、健康情報、財務情報、認証情報、位置情報、閲覧履歴、広告目的の行動情報を意図的に収集しません。ただし、ユーザーがGoogle Chatの下書きやメッセージ本文にこれらの情報を書いた場合、その内容が下書きデータまたは送信履歴データとして保存される可能性があります。
+  </p>
+
+  <h2>データの利用目的</h2>
+  <p>取得したデータは、Google Chat上で下書きを保存・再開する、最近の送信先へ戻る、各機能の設定を維持するなど、本拡張機能の単一目的とユーザー向け機能を提供するためにのみ使用します。それ以外の目的には使用しません。</p>
+
+  <h2>第三者への送信</h2>
+  <ul>
+    <li>本拡張機能は、開発者、開発者が管理するサーバー、または任意の第三者サービスへユーザーデータを送信しません。</li>
+    <li>ユーザーがGoogle Chatでメッセージを送信した場合、その通信はGoogle Chat本来の機能としてGoogleにより処理されます。本拡張機能は、その通信経路に独自の送信先を追加しません。</li>
+    <li><code>chrome.storage.sync</code>に保存されたデータは、ユーザーがChromeの同期機能を有効にしている場合、Google Chromeの仕組みによりユーザー自身のChrome環境間で同期されることがあります。この同期は開発者による受信・閲覧を意味しません。</li>
+  </ul>
+
+  <h2>データの保存</h2>
+  <ul>
+    <li>設定情報および下書きデータは、Chromeの<code>storage.sync</code>を用いて保存されます。</li>
+    <li>送信履歴データは、Chromeの<code>storage.local</code>を用いてユーザーの端末上に保存されます。</li>
+    <li>これらのデータが開発者や開発者のサーバーへ送信されることはありません。</li>
+  </ul>
+
+  <h2>データの保持期間と削除</h2>
+  <ul>
+    <li>下書きデータは、ユーザーが該当メッセージを送信した場合、入力欄を空にした場合、または下書き一覧から削除した場合に削除されます。</li>
+    <li>送信履歴データは、最大100件まで保持されます。ユーザーは送信履歴一覧から個別に削除できます。</li>
+    <li>本拡張機能をChromeから削除する、またはChromeの拡張機能データを削除することでも、保存データを削除できます。</li>
+  </ul>
+
+  <h2>限定的使用</h2>
+  <p>
+    本拡張機能は、Chrome Web Storeのユーザーデータポリシー（Limited Use requirementsを含む）を遵守します。ユーザーデータは、本拡張機能の開示された機能を提供・改善するためにのみ使用し、広告、トラッキング、販売、目的外の転送、人による閲覧には使用しません。
+  </p>
+
+  <h2>お問い合わせ</h2>
+  <p>本ポリシーに関するお問い合わせは、以下までご連絡ください。</p>
+  <ul>
+    <li>開発者: <strong>Kaworu Inoue</strong></li>
+    <li>連絡先: <strong><a href="mailto:dev_kwr@icloud.com">dev_kwr@icloud.com</a></strong></li>
+  </ul>
+</section>
+
+<hr>
+
+<!-- ====================== English ====================== -->
+<section lang="en" id="en">
+  <h1>Google Chat Enhancer — Privacy Policy</h1>
+  <p class="updated">Last updated: July 8, 2026</p>
+  <p class="nav"><a href="#ja">↑ 日本語版は上にあります</a></p>
+
+  <p class="lead">
+    Google Chat Enhancer (the "Extension") is a Chrome extension that adds helper features to Google Chat, including new line on Enter, a drafts list, and sent history. This policy explains what data the Extension handles and how.
+  </p>
+
+  <h2>Core principles</h2>
+  <ul>
+    <li>The Extension has no developer-operated server. The developer never receives, stores, or views your data.</li>
+    <li>The Extension runs only on Google Chat (<code>https://chat.google.com/*</code>).</li>
+    <li>The Extension performs no analytics, tracking, or advertising-related data collection.</li>
+    <li>The Extension does not sell or transfer user data, and does not use user data for creditworthiness or lending purposes.</li>
+  </ul>
+
+  <h2>Data the Extension handles</h2>
+  <p>The Extension may process and store the following data to provide its features:</p>
+  <ul>
+    <li><strong>Settings</strong>: on/off settings for features such as new line on Enter, drafts list, and sent history.</li>
+    <li><strong>Draft data</strong>: draft message text entered in Google Chat, conversation or space name, navigation path within Google Chat, saved timestamp, thread ID, and conversation icon URL when available. Draft message text is stored up to 7,000 characters.</li>
+    <li><strong>Sent history data</strong>: recently sent message text detected by the Extension, conversation or space name, navigation path within Google Chat, sent timestamp, thread ID, and conversation icon URL when available. Sent history is stored up to 100 items, with message text up to 500 characters per item.</li>
+  </ul>
+  <p>
+    The Extension does not intentionally collect health information, financial information, authentication information, location information, browsing history, or behavioral data for advertising. However, if you type such information into a Google Chat draft or message, that content may be stored as draft data or sent history data.
+  </p>
+
+  <h2>How the data is used</h2>
+  <p>The data is used only to provide the Extension's single purpose and user-facing features, such as saving and resuming drafts in Google Chat, returning to recent conversations, and preserving feature settings. It is not used for any other purpose.</p>
+
+  <h2>Disclosure to third parties</h2>
+  <ul>
+    <li>The Extension does not transmit user data to the developer, a developer-operated server, or any arbitrary third-party service.</li>
+    <li>When you send a message in Google Chat, that communication is processed by Google as part of Google Chat's normal functionality. The Extension does not add any additional destination to that communication path.</li>
+    <li>Data stored in <code>chrome.storage.sync</code> may be synchronized across your own Chrome environments by Google Chrome if you have Chrome sync enabled. This does not mean the developer receives or views the data.</li>
+  </ul>
+
+  <h2>Data storage</h2>
+  <ul>
+    <li>Settings and draft data are stored using Chrome's <code>storage.sync</code>.</li>
+    <li>Sent history data is stored on your device using Chrome's <code>storage.local</code>.</li>
+    <li>None of this data is transmitted to the developer or a developer-operated server.</li>
+  </ul>
+
+  <h2>Data retention and deletion</h2>
+  <ul>
+    <li>Draft data is deleted when you send the corresponding message, clear the input field, or delete the draft from the drafts list.</li>
+    <li>Sent history data is kept up to 100 items. You can delete individual sent history items from the sent history list.</li>
+    <li>You can also delete stored data by removing the Extension from Chrome or clearing the Extension's data in Chrome.</li>
+  </ul>
+
+  <h2>Limited use</h2>
+  <p>
+    The Extension complies with the Chrome Web Store User Data Policy, including the Limited Use requirements. User data is used only to provide or improve the Extension's disclosed functionality, and is not used for advertising, tracking, sale, unrelated transfer, or human review.
+  </p>
+
+  <h2>Contact</h2>
+  <p>For questions about this policy, please contact:</p>
+  <ul>
+    <li>Developer: <strong>Kaworu Inoue</strong></li>
+    <li>Contact: <strong><a href="mailto:dev_kwr@icloud.com">dev_kwr@icloud.com</a></strong></li>
+  </ul>
+</section>
+
+</body>
+</html>
