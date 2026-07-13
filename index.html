@@ -37,7 +37,7 @@
 <!-- ====================== 日本語 ====================== -->
 <section lang="ja" id="ja">
   <h1>Google Chat Enhancerプライバシーポリシー</h1>
-  <p class="updated">最終更新日: 2026年7月9日</p>
+  <p class="updated">最終更新日: 2026年7月13日</p>
   <p class="nav"><a href="#en">English version below ↓</a></p>
 
   <p class="lead">
@@ -57,7 +57,7 @@
   <ul>
     <li><strong>設定情報</strong>: Enterで改行、下書き一覧、送信履歴など各機能のオン／オフ設定。</li>
     <li><strong>下書きデータ</strong>: Google Chatの入力欄に書いた下書き本文、会話またはスペース名、Google Chat内の移動先パス、保存日時、スレッドID。下書き本文は最大7,000文字まで保存されます（同期ストレージの容量に収めるため、より短く切り詰められる場合があります）。</li>
-    <li><strong>送信履歴データ</strong>: 本拡張機能が検知した最近の送信メッセージ本文、会話またはスペース名、Google Chat内の移動先パス、送信日時、スレッドID。送信履歴は最大100件、本文は各件最大500文字まで保存されます。</li>
+    <li><strong>送信履歴データ</strong>: 本拡張機能が検知した最近の送信メッセージ本文、会話またはスペース名、Google Chat内の移動先パス、送信日時、スレッドID。送信履歴は最大100件、本文は各件最大500文字まで保存されます（同期ストレージの容量に収めるため、実際の保存件数はより少なくなる場合があります）。</li>
   </ul>
   <p>
     本拡張機能は、健康情報、財務情報、認証情報、位置情報、閲覧履歴、広告目的の行動情報を意図的に収集しません。ただし、ユーザーがGoogle Chatの下書きやメッセージ本文にこれらの情報を書いた場合、その内容が下書きデータまたは送信履歴データとして保存される可能性があります。
@@ -76,7 +76,7 @@
   <h2>データの保存</h2>
   <ul>
     <li>設定情報および下書きデータは、Chromeの<code>storage.sync</code>を用いて保存されます。</li>
-    <li>送信履歴データは、Chromeの<code>storage.local</code>を用いてユーザーの端末上に保存されます。</li>
+    <li>送信履歴データも、Chromeの<code>storage.sync</code>を用いて保存されます（同期ストレージの容量に収めるため、古いものから保存件数が減る場合があります）。</li>
     <li>これらのデータが開発者や開発者のサーバーへ送信されることはありません。</li>
   </ul>
 
@@ -105,7 +105,7 @@
 <!-- ====================== English ====================== -->
 <section lang="en" id="en">
   <h1>Google Chat Enhancer — Privacy Policy</h1>
-  <p class="updated">Last updated: July 9, 2026</p>
+  <p class="updated">Last updated: July 13, 2026</p>
   <p class="nav"><a href="#ja">↑ 日本語版は上にあります</a></p>
 
   <p class="lead">
@@ -125,7 +125,7 @@
   <ul>
     <li><strong>Settings</strong>: on/off settings for features such as new line on Enter, drafts list, and sent history.</li>
     <li><strong>Draft data</strong>: draft message text entered in Google Chat, conversation or space name, navigation path within Google Chat, saved timestamp, and thread ID. Draft message text is stored up to 7,000 characters (it may be truncated shorter to fit the sync-storage size limit).</li>
-    <li><strong>Sent history data</strong>: recently sent message text detected by the Extension, conversation or space name, navigation path within Google Chat, sent timestamp, and thread ID. Sent history is stored up to 100 items, with message text up to 500 characters per item.</li>
+    <li><strong>Sent history data</strong>: recently sent message text detected by the Extension, conversation or space name, navigation path within Google Chat, sent timestamp, and thread ID. Sent history is stored up to 100 items, with message text up to 500 characters per item (the actual number of stored items may be fewer to fit the sync-storage size limit).</li>
   </ul>
   <p>
     The Extension does not intentionally collect health information, financial information, authentication information, location information, browsing history, or behavioral data for advertising. However, if you type such information into a Google Chat draft or message, that content may be stored as draft data or sent history data.
@@ -144,7 +144,7 @@
   <h2>Data storage</h2>
   <ul>
     <li>Settings and draft data are stored using Chrome's <code>storage.sync</code>.</li>
-    <li>Sent history data is stored on your device using Chrome's <code>storage.local</code>.</li>
+    <li>Sent history data is also stored using Chrome's <code>storage.sync</code> (older items may be dropped to fit the sync-storage size limit).</li>
     <li>None of this data is transmitted to the developer or a developer-operated server.</li>
   </ul>
 
